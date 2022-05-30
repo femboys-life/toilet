@@ -119,13 +119,11 @@ end)
 --Player
 local Tab = Window:NewTab("Player")
 local Section = Tab:NewSection("Player") --Player Tab
-Section:NewButton("Walkspeed", "Walk like flash or sonic", function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 --The higher the number, the faster you walk
+Section:NewSlider("Walkspeed", "Walk like flash or sonic", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-Section:NewButton("Jumppower", "Jump higher lol", function()
-local dgyagdyuafydfaudauygfdyuagfyda = game.Players.LocalPlayer
-
-dgyagdyuafydfaudauygfdyuagfyda.Character.Humanoid.JumpPower = 300 --The higher the number, the higher you jump
+Section:NewSlider("Jumppower", "Jump higher lol", 500, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
  
