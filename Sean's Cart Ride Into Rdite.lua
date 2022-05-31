@@ -1,6 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Sean's Cart Ride into Rdite | sean pro toilet gamer#5554", "DarkTheme")
- 
+
+--Main
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
 Section:NewButton("Teleport to the end", "Teleport to the Winners Section", function()
@@ -46,21 +47,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TR011F4C3/PANDA/main/
 end)
  
 Section:NewButton("Noclip", "Clip through walls and make everyone confused, press V to toggle the script", function()
-noclip = false
-game:GetService('RunService').Stepped:connect(function()
-if noclip then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
+    game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+    while true do
+    	 game:GetService("RunService").Stepped:wait()
+	   	 game.Players.LocalPlayer.Character.Head.CanCollide = false
+	     game.Players.LocalPlayer.Character.Torso.CanCollide = false
 end
-end)
-plr = game.Players.LocalPlayer
-mouse = plr:GetMouse()
-mouse.KeyDown:connect(function(key)
- 
-if key == "v" then
-noclip = not noclip
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end
-end)
 end)
  
  
