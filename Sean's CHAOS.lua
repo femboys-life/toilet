@@ -5,7 +5,7 @@ local Window = Library.CreateLib("Sean's CHAOS | sean pro toilet gamer#5554", "D
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main") --Main Tab
 Section:NewButton("Hitbox", "Make enemies easier to kill with bigger hitbox", function()
-    _G.HeadSize = 20
+    _G.HeadSize = 25
 	_G.Disabled = true
  
 	game:GetService('RunService').RenderStepped:connect(function()
