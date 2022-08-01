@@ -1,6 +1,15 @@
---loadstring(game:HttpGet("https://raw.githubusercontent.com/seanthetoiletgamer/RobloxScripts/main/Loadstring.lua"))()
---Aimbot might also work on some other games
---Cart ride script might also work on other cart games
+--[[
+
+███╗░░░███╗░█████╗░██████╗░███████╗  ██████╗░██╗░░░██╗  ░██████╗███████╗░█████╗░███╗░░██╗
+████╗░████║██╔══██╗██╔══██╗██╔════╝  ██╔══██╗╚██╗░██╔╝  ██╔════╝██╔════╝██╔══██╗████╗░██║
+██╔████╔██║███████║██║░░██║█████╗░░  ██████╦╝░╚████╔╝░  ╚█████╗░█████╗░░███████║██╔██╗██║
+██║╚██╔╝██║██╔══██║██║░░██║██╔══╝░░  ██╔══██╗░░╚██╔╝░░  ░╚═══██╗██╔══╝░░██╔══██║██║╚████║
+██║░╚═╝░██║██║░░██║██████╔╝███████╗  ██████╦╝░░░██║░░░  ██████╔╝███████╗██║░░██║██║░╚███║
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝  ╚═════╝░░░░╚═╝░░░  ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝
+loadstring(game:HttpGet("https://raw.githubusercontent.com/seanthetoiletgamer/RobloxScripts/main/Loadstring.lua"))()
+* Aimbot might also work on some other games
+* Cart ride script might also work on other cart games
+--]]
 
 if game.PlaceId == 8059519018
     loadstring(game:HttpGet("https://raw.githubusercontent.com/seanthetoiletgamer/RobloxScripts/main/Sean's%20Aimbot.lua"))()
