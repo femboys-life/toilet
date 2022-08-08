@@ -8,7 +8,7 @@
 
 sean pro toilet gamer#5554
 
-Supports 7 Games
+Supports 8 Games
 * Alo Sanctuary
 * Break In
 * CHAOS
@@ -16,6 +16,9 @@ Supports 7 Games
 * Hide and Seek Extreme
 * Tower of Hell
 * Zombie Attack
+* Nico's Nextbots
+
+oh yeah and also a universal aimbot
 
 not my fault if the script breaks down
 
