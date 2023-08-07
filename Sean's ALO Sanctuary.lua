@@ -84,6 +84,6 @@ haxreal:addSlider("WalkSpeed",16,150,function(theycallmeskid)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = theycallmeskid
 end)
 
-haxreal:addSlider("JumpPower",16,150,function(iamskid)
+haxreal:addSlider("JumpPower",50,300,function(iamskid)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = iamskid
 end)
