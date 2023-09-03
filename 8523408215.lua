@@ -63,7 +63,7 @@ Macro:CreateButton("O", "Edge of the Map", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4953, 17, -4962)
 end)
 
-Credits:CreateLabel("-- Credits --")
+Credits:CreateLabel("Credits")
 Credits:CreateLabel("toilet#5244 - Beta Tester")
 Credits:CreateLabel("verbb#9595 - Beta Tester")
 Credits:CreateLabel("xHeptc#2255 - Library Creator")
