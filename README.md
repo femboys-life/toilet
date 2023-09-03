@@ -1,38 +1,5 @@
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-# Broken
-
-
-Supports 8 Games
+# Toilet Hub
+Supports 9 Games:
 * Alo Sanctuary
 * Break In
 * CHAOS
@@ -41,6 +8,7 @@ Supports 8 Games
 * Tower of Hell
 * Zombie Attack
 * Nico's Nextbots
+* Da Hood
 
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/seanthetoiletgamer/RobloxScripts/main/Loadstring.lua"))()
