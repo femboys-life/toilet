@@ -129,7 +129,7 @@ game.ReplicatedStorage.RemoteEvents.Safe:FireServer(game:GetService("Workspace")
 end)
 
 Pleyernegger:CreateLabel("Player")
-Pleyernegger:CreateButton("Press", "Fly", function()
+Pleyernegger:CreateButton("O", "Fly", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/QGLvkvU7"))()
 end)
 Pleyernegger:CreateSlider(16, 500, "Walkspeed", function(val)
