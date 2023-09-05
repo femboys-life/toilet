@@ -48,6 +48,7 @@ Macro:CreateButton("O", "Fake Macro", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/78q8tMk9"))()
 end)
 
+d:CreateLabel("Credits")
 d:CreateButton("Copy", "toilet#5244 - Beta tester", function()
 setclipboard("toilet#5244")
 end)
