@@ -1,14 +1,24 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Sean's Cart Ride into Rdite | sean pro toilet gamer#5554", "DarkTheme")
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "made by seanthetoiletgamer";
+Title = "Loaded!";
+Duration = 5;
+});
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Fuzki-UI-Library/main/FuzkiLibrary.lua"))()
+local Main = Library:Create("Toilet Hub", "Cart ride into Rdite")
+
+local a = Main:CreateSection("Main")
+local b = Main:CreateSection("Player")
+local c = Main:CreateSection("Admin")
+local d = Main:CreateSection("Credits")
 
 --Main
-local Tab = Window:NewTab("Main")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Teleport to the end", "Teleport to the Winners Section", function()
+a:CreateButton("O", "Teleport to the end", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(310.673279, 852.799805, 321.170715, -1, -2.03773265e-08, -1.86249469e-08, -2.03773247e-08, 1, -6.54766623e-08, 1.86249487e-08, -6.54766623e-08, -1) 
 end)
- 
-Section:NewButton("Break Carts", "Makes carts no longer work for everyone", function()
+a:CreateButton("O", "Break Carts", function()
     local function hook(cart)
    pcall(function()
        cart:WaitForChild("On")
@@ -40,13 +50,11 @@ end)
 end)
 
 --Player
-local Tab = Window:NewTab("Player")
-local Section = Tab:NewSection("Player")
-Section:NewButton("Fly", "Fly around the map and make everyone think you're a hacker, press E to toggle the script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TR011F4C3/PANDA/main/scripts/fly.lua", true))()
+b:CreateButton("O", "Fly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QGLvkvU7"))()
 end)
  
-Section:NewButton("Noclip", "Clip through walls and make everyone confused, press V to toggle the script", function()
+b:CreateButton("O", "Noclip", function()
     game.Players.LocalPlayer.Character.Humanoid.MaxHealth = math.huge
     game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
     while true do
@@ -57,7 +65,7 @@ end
 end)
  
  
-Section:NewButton("Click to Teleport", "Teleport anywhere just by clicking", function()
+b:CreateButton("O", "Click to Teleport", function()
     mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
@@ -70,7 +78,7 @@ end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 end)
  
-Section:NewToggle("Infinite Jump", "Jump Infinitely, he just has a good gaming chair", function(state)
+b:CreateToggle("Infinite Jump", function(state)
     if state then
 _G.infinjump = true
 local Player = game:GetService("Players").LocalPlayer
@@ -98,36 +106,41 @@ end)
  
  
  
-Section:NewSlider("Walkspeed", "Walk like flash or sonic lol", 500, 0, function(ussususususuusususuususus) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ussususususuusususuususus
+b:CreateSlider(16, 500, "Walkspeed", function(val)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = val
 end)
- 
-Section:NewSlider("Jumppower", "Jump really really really high", 500, 0, function(hellothisismicrosofttechsupport) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = hellothisismicrosofttechsupport
+b:CreateSlider(50, 500, "Jumppower", function(dockrr)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = dockrr
 end)
+    
  
-Section:NewTextBox("Teleport to a Player", "Teleport to your desired player", function(PlayerTeleportName)
+b:CreateTextBox("Teleport to a Player", "Name", function(PlayerTeleportName)
 local playerone = game.Players.LocalPlayer.Character
 local playertwo = game.Workspace:FindFirstChild(PlayerTeleportName)
 playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
 end)
 
 --Admin
-local Tab = Window:NewTab("Admin")
-local Section = Tab:NewSection("Admin Scripts")
-Section:NewButton("Infinite Yield", "cool hax that everyone and their dog uses", function()
+c:CreateButton("O", "Infinite Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
-Section:NewButton("CMD-X", "underrated admin script not everyone uses", function()
+c:CreateButton("O", "CMD-X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
-Section:NewButton("Homebrew Admin", "homebrew reminds me of nintendo wii", function()
+c:CreateButton("O", "Homebrew Admin", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'),true))()
 end)
 
 --Credits
-local Tab = Window:NewTab("Credits")
-local Section = Tab:NewSection("Credits")
-Section:NewButton("sean pro toilet gamer#5554", "Click The button to copy", function()
-setclipboard("sean pro toilet gamer#5554")
+d:CreateButton("Copy", "toilet#5244 - Beta tester", function()
+setclipboard("toilet#5244")
+end)
+d:CreateButton("Copy", "verbb#9595 - Beta tester", function()
+setclipboard("verbb#9595")
+end)
+d:CreateButton("Copy", "xHeptc#2255 - Library creator", function()
+setclipboard("xHeptc#2255")
+end)
+d:CreateButton("Copy", "st#8325 - Toilet god", function()
+setclipboard("st#8325")
 end)
