@@ -7,7 +7,7 @@ Duration = 5;
 });
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Fuzki-UI-Library/main/FuzkiLibrary.lua"))()
-local Main = Library:Create("Toilet Hub", "CHAOS")
+local Main = Library:Create("Toilet Hub", "Hide and Seek Extreme")
 
 local a = Main:CreateSection("Main")
 local b = Main:CreateSection("Player")
