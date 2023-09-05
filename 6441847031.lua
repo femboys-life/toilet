@@ -15,6 +15,7 @@ local c = Main:CreateSection("Admin")
 local d = Main:CreateSection("Credits")
 
 --Main
+a:CreateLabel("Main")
 a:CreateButton("O", "Hitbox", function()
     _G.HeadSize = 25
 	_G.Disabled = true
@@ -45,6 +46,7 @@ a:CreateButton("O", "Free tools/Gamepasses", function()
 end)
 
 --Player
+b:CreateLabel("Player")
 b:CreateButton("O", "Fly", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/QGLvkvU7"))()
 end)
@@ -116,6 +118,7 @@ playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.n
 end)
 
 --Admin
+c:CreateLabel("Admin")
 c:CreateButton("O", "Infinite Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
@@ -127,6 +130,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewA
 end)
 
 --Credits
+d:CreateLabel("Credits")
 d:CreateButton("Copy", "toilet#5244 - Beta tester", function()
 setclipboard("toilet#5244")
 end)
