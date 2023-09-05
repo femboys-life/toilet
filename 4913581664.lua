@@ -15,6 +15,7 @@ local c = Main:CreateSection("Admin")
 local d = Main:CreateSection("Credits")
 
 --Main
+a:CreateLabel("Main")
 a:CreateButton("O", "Teleport to the end", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(310.673279, 852.799805, 321.170715, -1, -2.03773265e-08, -1.86249469e-08, -2.03773247e-08, 1, -6.54766623e-08, 1.86249487e-08, -6.54766623e-08, -1) 
 end)
@@ -50,6 +51,7 @@ end)
 end)
 
 --Player
+b:CreateLabel("Player")
 b:CreateButton("O", "Fly", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/QGLvkvU7"))()
 end)
@@ -121,6 +123,7 @@ playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.n
 end)
 
 --Admin
+c:CreateLabel("Admin")
 c:CreateButton("O", "Infinite Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
@@ -132,6 +135,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewA
 end)
 
 --Credits
+d:CreateLabel("Credits")
 d:CreateButton("Copy", "toilet#5244 - Beta tester", function()
 setclipboard("toilet#5244")
 end)
