@@ -5,9 +5,6 @@ Supports 9 Games:
 * CHAOS
 * Cart Ride Into Rdite
 * Hide and Seek Extreme
-* Tower of Hell
-* Zombie Attack
-* Nico's Nextbots
 * Da Hood
 
 ```
